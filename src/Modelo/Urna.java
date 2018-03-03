@@ -7,9 +7,13 @@ public class Urna {
      */
     private ArrayList<Votante> votantes;
     private ArrayList<Papeleta> votosEmitidos;
+    private int identificador;
+
+
     public Urna(ArrayList<Votante> pVotantes) {
         votantes = pVotantes;
     }
+
     //Devuelve True si puede registrar al votante, falso en cualquier otro caso.
     private boolean registrarVotanteEnBitacora(String pIdentificacionVotante)
     {
@@ -66,8 +70,7 @@ public class Urna {
         //Registra al votante como verdadero para saber que ya voto
         if(registrarVotanteEnBitacora(pIdentificacion))
         {
-            ArrayList<Candidato> listaCandidatos = loadCandidatos();
-            Papeleta nuevaPapeleta = new Papeleta(listaCandidatos);
+            Papeleta nuevaPapeleta = new Papeleta();
             nuevaPapeleta.votarPor(pVotoEmitido);
             votosEmitidos.add(nuevaPapeleta);
             return true;
@@ -77,21 +80,6 @@ public class Urna {
     }
     public ArrayList<Papeleta> getVotosEmitidos() {
         return votosEmitidos;
-    }
-    private   ArrayList<Candidato> loadCandidatos()
-    {
-        //Cargarlos de la base de datos.
-        Candidato cand1 = new Candidato("Candidato 1","Miembro de la IEEE");
-        Candidato cand2 = new Candidato("Candidato 2","Miembro del Consejo");
-        Candidato cand3 = new Candidato("Candidato 3","Miembro de ACM");
-
-        ArrayList<Candidato> listaCandidatos = new ArrayList<Candidato>();
-
-        listaCandidatos.add(cand1);
-        listaCandidatos.add(cand2);
-        listaCandidatos.add(cand3);
-
-        return listaCandidatos;
     }
 
     public void setVotantes(ArrayList<Votante> votantes) {
