@@ -11,7 +11,6 @@ public class CentroVotacion {
     private String nombre;
     private int id;
 
-
     public String getNombre() {
         return nombre;
     }
