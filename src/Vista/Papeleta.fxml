@@ -15,17 +15,17 @@
       <RadioButton id="rb03" layoutX="361.0" layoutY="185.0" mnemonicParsing="false" text="Candidato3" />
       <ImageView fitHeight="111.0" fitWidth="104.0" layoutX="67.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../imageSource/1.jpg" />
+            <Image url="@../imageSource/1.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="125.0" fitWidth="104.0" layoutX="227.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../imageSource/2.jpg" />
+            <Image url="@../imageSource/2.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="95.0" fitWidth="116.0" layoutX="367.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../imageSource/3.jpg" />
+            <Image url="@../imageSource/3.png" />
          </image>
       </ImageView>
       <Label layoutX="57.0" layoutY="248.0" text="Identificación: " />
