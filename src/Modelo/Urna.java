@@ -7,6 +7,16 @@ public class Urna {
      */
     private ArrayList<Votante> votantes;
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    private int id;
+
     public void setVotosEmitidos(ArrayList<Papeleta> votosEmitidos) {
         this.votosEmitidos = votosEmitidos;
     }
@@ -15,8 +25,10 @@ public class Urna {
     private int identificador;
 
 
-    public Urna(ArrayList<Votante> pVotantes) {
+    public Urna(ArrayList<Votante> pVotantes, int id)
+    {
         votantes = pVotantes;
+        this.id = id;
     }
 
     //Devuelve True si puede registrar al votante, falso en cualquier otro caso.

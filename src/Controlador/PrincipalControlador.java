@@ -4,37 +4,104 @@ import Modelo.CentroVotacion;
 import Modelo.Papeleta;
 import Modelo.Urna;
 import Modelo.Votante;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.event.ActionEvent;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
+import java.net.URL;
+import javafx.fxml.Initializable;
+import javafx.collections.FXCollections;
 
 import java.sql.Array;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
+import java.util.ResourceBundle;
 
-public class PrincipalControlador {
+public class PrincipalControlador implements Initializable {
     //Controles
     @FXML
     public Button botonCerrar;
     @FXML
     public Label lblResultados;
+    @FXML
+    public ComboBox<String> cmbUrna;
 
+
+    public void initialize(URL fxmlFileLocation, ResourceBundle resources)
+    {
+        cargarUrnas();
+    }
+
+    public void cargarUrnas()
+    {
+        try {
+
+            Conexion con = new Conexion();
+            Connection x = con.conectar();
+            String sql = "Select * from URNA";
+            PreparedStatement pst = x.prepareStatement(sql);
+            ResultSet resp = pst.executeQuery();
+            ObservableList<String> list = FXCollections.observableArrayList();
+            while (resp.next())
+            {
+                int idUrna = resp.getInt(1);
+                list.add(String.valueOf(idUrna));
+            }
+            cmbUrna.setItems(list);
+        }catch(Exception e) {
+
+        }
+
+    }
 
     public void obtenerAsistencia(ActionEvent event)
     {
         CentroVotacion centro = loadCentro();
         ArrayList<Urna> listaUrnas = loadUrnas(centro.getId());
         centro.setUrnas(listaUrnas);
+
+
+
         float resultado = centro.reportarAbstencionismo();
 
-        lblResultados.setText("Resultado = "+String.valueOf(100-resultado));
+        lblResultados.setText("Resultado = "+String.valueOf(100-resultado)+"%");
     }
     public void reportarDesglose(ActionEvent event)
     {
+        try {
+            int urnaSeleccionada = Integer.valueOf(cmbUrna.getValue());
+            CentroVotacion centro = loadCentro();
+            ArrayList<Urna> listaUrnas = loadUrnas(centro.getId());
+            centro.setUrnas(listaUrnas);
 
+            int tam = listaUrnas.size();
+            for(int i = 0;i<tam;i++)
+            {
+                Urna urna = listaUrnas.get(i);
+                if(urna.getId() == urnaSeleccionada)
+                {
+                    String re = "Candidato 1 = "+
+                            urna.obtenerVotosPorCandidato(1)+
+                            "\nCandidato 2 = "+
+                            urna.obtenerVotosPorCandidato(2)+
+                            "\nCandidato 3 = "+
+                            urna.obtenerVotosPorCandidato(3)+
+                            "\nVotos en Blanco = "+
+                            urna.obtenerVotosPorCandidato(4)
+                            ;
+                    lblResultados.setText(re);
+                    break;
+                }
+            }
+        }
+        catch (Exception e)
+        {
+
+        }
     }
     public void reportarAbstencionismo(ActionEvent event)
     {
@@ -42,7 +109,7 @@ public class PrincipalControlador {
         ArrayList<Urna> listaUrnas = loadUrnas(centro.getId());
         centro.setUrnas(listaUrnas);
         float resultado = centro.reportarAbstencionismo();
-        lblResultados.setText("Resultado = "+String.valueOf(resultado));
+        lblResultados.setText("Resultado = "+String.valueOf(resultado)+"%");
 
     }
     public void reportarGanador(ActionEvent event)
@@ -93,7 +160,7 @@ public class PrincipalControlador {
 
                 ArrayList<Votante> listaVotantes = loadVotantes(idUrna);
                 ArrayList<Papeleta> listaPapeletas = loadPapeletas(idUrna);
-                Urna urna = new Urna(listaVotantes);
+                Urna urna = new Urna(listaVotantes,idUrna);
                 urna.setVotosEmitidos(listaPapeletas);
                 urnasCentro.add(urna);
             }
