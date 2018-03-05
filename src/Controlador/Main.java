@@ -17,7 +17,7 @@ public class Main extends Application {
 
         Parent root = FXMLLoader.load(getClass().getResource("../Vista/Principal.fxml"));
         primaryStage.setTitle("");
-        primaryStage.setScene(new Scene(root, 550, 275));
+        primaryStage.setScene(new Scene(root));
         primaryStage.show();
         if(permitirVotacion("1"))
         {

@@ -6,6 +6,11 @@ public class Urna {
      * @aggregation shared
      */
     private ArrayList<Votante> votantes;
+
+    public void setVotosEmitidos(ArrayList<Papeleta> votosEmitidos) {
+        this.votosEmitidos = votosEmitidos;
+    }
+
     private ArrayList<Papeleta> votosEmitidos;
     private int identificador;
 

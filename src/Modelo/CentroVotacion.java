@@ -39,9 +39,11 @@ public class CentroVotacion {
         this.Urnas = Urnas;
     }
 
-    public ArrayList<Urna> getUrnas() {
+    public ArrayList<Urna> getUrnas()
+    {
         return Urnas;
     }
+
     public int obtenerGanador()
     {
         //Los ganadores del 1 al 3 son candidatos, el 4 el voto en blanco.
@@ -50,7 +52,7 @@ public class CentroVotacion {
 
         int tam = Urnas.size();
 
-        int[] candi = {0,0,0,0};
+        int[] candi = {0,0,0};
 
         for (int i = 0; i<tam;i++)
         {
@@ -59,8 +61,11 @@ public class CentroVotacion {
             candi[0] += urna.obtenerVotosPorCandidato(1);
             candi[1] += urna.obtenerVotosPorCandidato(2);
             candi[2] += urna.obtenerVotosPorCandidato(3);
-            //Voto Blanco
-            candi[3] += urna.obtenerVotosPorCandidato(4);
+        }
+
+        if (candi[0] == 0 && candi[1] == 0 && candi[2] == 0)
+        {
+            return -1;
         }
 
         return determinarCandidatoGanador(candi);
@@ -69,7 +74,7 @@ public class CentroVotacion {
     {
         int may = listaNumeros[0];
         int indice = 0;
-        for(int i = 1; i<4;i++)
+        for(int i = 1; i<3;i++)
         {
            if(listaNumeros[i]>may)
            {
@@ -83,14 +88,17 @@ public class CentroVotacion {
     public float reportarAbstencionismo()
     {
         int tam = Urnas.size();
-        int cantidadVotantes = 0,cantidadVotos = 0;
+        float cantidadVotantes = 0,cantidadVotos = 0;
         for (int i = 0; i<tam;i++)
         {
             Urna urna = Urnas.get(i);
             cantidadVotantes += urna.getVotantes().size();
             cantidadVotos += urna.obtenerAsistencia();
         }
-
-        return (cantidadVotos/cantidadVotantes)*100;
+        if(cantidadVotos == 0)
+        {
+            return 100;
+        }
+        return (1-(cantidadVotos/cantidadVotantes))*100;
     }
 }
