@@ -15,7 +15,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
 
-        Parent root = FXMLLoader.load(getClass().getResource("../Vista/Principal.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("../Vista/Menu.fxml"));
         primaryStage.setTitle("");
         primaryStage.setScene(new Scene(root));
         primaryStage.show();

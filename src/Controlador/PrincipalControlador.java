@@ -14,7 +14,6 @@ import java.net.URL;
 import javafx.fxml.Initializable;
 import javafx.collections.FXCollections;
 
-import java.sql.Array;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -141,7 +140,7 @@ public class PrincipalControlador implements Initializable {
             }
         }
     }
-    private ArrayList<Urna> loadUrnas(int idCentro)
+    public static ArrayList<Urna> loadUrnas(int idCentro)
     {
         ArrayList<Urna> urnasCentro = new ArrayList<Urna>();
 
@@ -172,7 +171,7 @@ public class PrincipalControlador implements Initializable {
             return null;
         }
     }
-    private ArrayList<Papeleta> loadPapeletas(int idUrna)
+    public static ArrayList<Papeleta> loadPapeletas(int idUrna)
     {
         ArrayList<Papeleta> listaPapeletas = new ArrayList<Papeleta>();
         try
@@ -198,7 +197,7 @@ public class PrincipalControlador implements Initializable {
             return null;
         }
     }
-    private ArrayList<Votante> loadVotantes(int idUrna)
+    public static ArrayList<Votante> loadVotantes(int idUrna)
     {
         ArrayList<Votante> listaVotantes = new ArrayList<Votante>();
         try
@@ -224,7 +223,7 @@ public class PrincipalControlador implements Initializable {
             return null;
         }
     }
-    private Votante loadVotante(int id)
+    public static Votante loadVotante(int id)
     {
         try
         {
@@ -252,7 +251,7 @@ public class PrincipalControlador implements Initializable {
         }
         return null;
     }
-    private CentroVotacion loadCentro ()
+    public static CentroVotacion loadCentro ()
     {
         try {
 

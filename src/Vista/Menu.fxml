@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.MenuControlador">
+   <children>
+      <Label layoutX="129.0" layoutY="26.0" text="Menú de accesos">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnAdmin" layoutX="89.0" layoutY="125.0" mnemonicParsing="false" onAction="#abrirPrincipal" prefHeight="179.0" prefWidth="212.0" text="Administrador de la votación" />
+      <Button fx:id="btnVotante" layoutX="308.0" layoutY="125.0" mnemonicParsing="false" onAction="#abrirPapeleta" prefHeight="179.0" prefWidth="205.0" text="Votante" />
+      <Separator layoutY="220.0" prefHeight="3.0" prefWidth="89.0" />
+      <Separator layoutX="511.0" layoutY="219.0" prefHeight="3.0" prefWidth="89.0" />
+   </children>
+</AnchorPane>

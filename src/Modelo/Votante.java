@@ -36,4 +36,8 @@ public class Votante {
     public boolean isEstadoVoto() {
         return estadoVoto;
     }
+
+    public void votar(int opcion){
+
+    }
 }

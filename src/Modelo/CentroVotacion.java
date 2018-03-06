@@ -10,7 +10,7 @@ public class CentroVotacion {
     private ArrayList<Urna> Urnas;
     private String nombre;
     private int id;
-
+    private ArrayList<Candidato> Candidatos;
 
     public String getNombre() {
         return nombre;

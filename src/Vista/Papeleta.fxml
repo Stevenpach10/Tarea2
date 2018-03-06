@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.shape.*?>
 <?import javafx.scene.image.*?>
 <?import java.lang.*?>
 <?import javafx.scene.control.*?>
@@ -7,28 +8,19 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="312.0" prefWidth="522.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vista.Papeleta">
+<AnchorPane prefHeight="312.0" prefWidth="522.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.PapeletaControlador">
    <children>
-      <Button layoutX="381.0" layoutY="243.0" mnemonicParsing="false" text="Votar" />
-      <RadioButton id="rb01" layoutX="67.0" layoutY="185.0" mnemonicParsing="false" text="Candidato1" />
-      <RadioButton id="rb02" layoutX="210.0" layoutY="185.0" mnemonicParsing="false" text="Candidato2" />
-      <RadioButton id="rb03" layoutX="361.0" layoutY="185.0" mnemonicParsing="false" text="Candidato3" />
-      <ImageView fitHeight="111.0" fitWidth="104.0" layoutX="67.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../imageSource/1.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="125.0" fitWidth="104.0" layoutX="227.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../imageSource/2.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="95.0" fitWidth="116.0" layoutX="367.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../imageSource/3.png" />
-         </image>
-      </ImageView>
+      <Button layoutX="381.0" layoutY="243.0" mnemonicParsing="false" onAction="#votar" text="Votar" />
+      <RadioButton id="rb01" fx:id="rdb1" layoutX="67.0" layoutY="185.0" mnemonicParsing="false" text="Candidato1" />
+      <RadioButton id="rb02" fx:id="rdb2" layoutX="210.0" layoutY="185.0" mnemonicParsing="false" text="Candidato2" />
+      <RadioButton id="rb03" fx:id="rdb3" layoutX="361.0" layoutY="185.0" mnemonicParsing="false" text="Candidato3" />
       <Label layoutX="57.0" layoutY="248.0" text="Identificación: " />
-      <TextField layoutX="166.0" layoutY="243.0" />
+      <TextField fx:id="txtId" layoutX="166.0" layoutY="243.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="67.0" layoutX="67.0" layoutY="100.0" stroke="BLACK" strokeType="INSIDE" width="114.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1fff47" height="56.0" layoutX="67.0" layoutY="45.0" stroke="BLACK" strokeType="INSIDE" width="114.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e4ff1f" height="121.0" layoutX="214.0" layoutY="45.0" stroke="BLACK" strokeType="INSIDE" width="57.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff511f" height="121.0" layoutX="271.0" layoutY="45.0" stroke="BLACK" strokeType="INSIDE" width="57.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff1ff7" height="121.0" layoutX="365.0" layoutY="45.0" stroke="BLACK" strokeType="INSIDE" width="104.0" />
+      <Circle fill="DODGERBLUE" layoutX="417.0" layoutY="106.0" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
    </children>
 </AnchorPane>
