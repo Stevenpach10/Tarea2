@@ -19,14 +19,7 @@ public class Main extends Application {
         primaryStage.setTitle("");
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
-        if(permitirVotacion("1"))
-        {
-            System.out.print("Puede votar!");
-        }
-        else
-        {
-            System.out.print("Ya voto!");
-        }
+
 
     }
     private boolean  permitirVotacion(String pIdentificacion)

@@ -26,7 +26,7 @@ public class Conexion {
         }
         catch(Exception e)
         {
-            System.out.print("ME CAI");
+
         }
         return null;
     }

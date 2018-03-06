@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Tarea2:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tarea2/Modelo/CentroVotacion.class" afterPath="$PROJECT_DIR$/out/production/Tarea2/Modelo/CentroVotacion.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/Tarea2_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tarea2/Controlador/Conexion.class" afterPath="$PROJECT_DIR$/out/production/Tarea2/Controlador/Conexion.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tarea2/Controlador/Main.class" afterPath="$PROJECT_DIR$/out/production/Tarea2/Controlador/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tarea2/Vista/Principal.fxml" afterPath="$PROJECT_DIR$/out/production/Tarea2/Vista/Principal.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tarea2.iml" afterPath="$PROJECT_DIR$/Tarea2.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controlador/Conexion.java" afterPath="$PROJECT_DIR$/src/Controlador/Conexion.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controlador/Main.java" afterPath="$PROJECT_DIR$/src/Controlador/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controlador/PapeletaControlador.java" afterPath="$PROJECT_DIR$/src/Controlador/PapeletaControlador.java" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -67,97 +78,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controlador/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-16">
-              <caret line="25" column="12" lean-forward="true" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1520271739117" expanded="true" signature="945:991" ph="Select * fro... Votante" />
-                <marker date="1520271739117" expanded="false" signature="1472:1483" ph=" { " />
-                <marker date="1520271739117" expanded="false" signature="1496:1502" ph=" }" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Conexion.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controlador/Conexion.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="588">
-              <caret line="31" column="5" lean-forward="false" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CentroVotacion.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Modelo/CentroVotacion.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Papeleta.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Modelo/Papeleta.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding>
-                <element signature="e#397#398#0" expanded="true" />
-                <marker date="1520220428530" expanded="false" signature="396:407" ph=" { " />
-                <marker date="1520220428530" expanded="false" signature="431:437" ph=" }" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PrincipalControlador.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controlador/PrincipalControlador.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding>
-                <element signature="e#865#866#0" expanded="true" />
-                <element signature="e#894#895#0" expanded="true" />
-                <element signature="e#4289#4295#0" expanded="true" />
-                <element signature="e#5253#5263#0" expanded="true" />
-                <element signature="e#6083#6092#0" expanded="true" />
-                <marker date="1520296827795" expanded="true" signature="1060:1078" ph="Select * fro... URNA" />
-                <marker date="1520296827795" expanded="true" signature="4428:4472" ph="Select * fro... URNA_CENTRO" />
-                <marker date="1520296827795" expanded="true" signature="5402:5441" ph="Select * fro... PAPELETA" />
-                <marker date="1520296827795" expanded="true" signature="6231:6274" ph="Select * fro... URNA_VOTANTE" />
-                <marker date="1520296827795" expanded="true" signature="6915:6960" ph="Select * fro... VOTANTE" />
-                <marker date="1520296827795" expanded="true" signature="7740:7769" ph="Select * fro... Centro_Votacion" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="PapeletaControlador.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controlador/PapeletaControlador.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state relative-caret-position="378">
+              <caret line="18" column="9" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1520296827707" expanded="true" signature="771:815" ph="Select * fro... Votante" />
-                <marker date="1520296827707" expanded="true" signature="771:816" ph="Select * fro... Votante" />
-                <marker date="1520296827707" expanded="true" signature="1129:1184" ph="SELECT ID_UR... URNA_VOTANTE" />
-                <marker date="1520296827707" expanded="true" signature="1548:1577" ph="INSERT INTO PAPELETA... " />
-                <marker date="1520296827707" expanded="true" signature="1548:1593" ph="INSERT INTO PAPELETA... " />
-                <marker date="1520296827707" expanded="true" signature="1548:1594" ph="INSERT INTO PAPELETA... " />
-                <marker date="1520296827707" expanded="true" signature="1548:1613" ph="INSERT INTO PAPELETA... " />
-                <marker date="1520296827707" expanded="true" signature="1782:1816" ph="UPDATE VOTAT... " />
-                <marker date="1520296827707" expanded="true" signature="1782:1839" ph="UPDATE VOTAT... " />
-                <marker date="1520296827707" expanded="true" signature="1782:1840" ph="UPDATE VOTAT... " />
+                <marker date="1520313566493" expanded="true" signature="785:829" ph="Select * fro... Votante" />
+                <marker date="1520313566493" expanded="true" signature="785:830" ph="Select * fro... Votante" />
+                <marker date="1520313566493" expanded="true" signature="1143:1198" ph="SELECT ID_UR... URNA_VOTANTE" />
+                <marker date="1520313566493" expanded="true" signature="1562:1591" ph="INSERT INTO PAPELETA... " />
+                <marker date="1520313566493" expanded="true" signature="1562:1607" ph="INSERT INTO PAPELETA... " />
+                <marker date="1520313566493" expanded="true" signature="1562:1608" ph="INSERT INTO PAPELETA... " />
+                <marker date="1520313566493" expanded="true" signature="1562:1627" ph="INSERT INTO PAPELETA... " />
+                <marker date="1520313566493" expanded="true" signature="1796:1830" ph="UPDATE VOTAT... " />
+                <marker date="1520313566493" expanded="true" signature="1796:1853" ph="UPDATE VOTAT... " />
+                <marker date="1520313566493" expanded="true" signature="1796:1854" ph="UPDATE VOTAT... " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MANIFEST.MF" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -166,7 +114,7 @@
         <entry file="file://$PROJECT_DIR$/src/Controlador/MenuControlador.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="714">
-              <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -178,7 +126,7 @@
         <entry file="file://$PROJECT_DIR$/src/Modelo/Candidato.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="5" column="27" lean-forward="true" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+              <caret line="5" column="27" lean-forward="false" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -237,13 +185,14 @@
         <option value="$PROJECT_DIR$/src/Modelo/Papeleta.java" />
         <option value="$PROJECT_DIR$/src/Modelo/Urna.java" />
         <option value="$PROJECT_DIR$/src/Modelo/Votante.java" />
-        <option value="$PROJECT_DIR$/src/Controlador/Conexion.java" />
-        <option value="$PROJECT_DIR$/src/Controlador/Main.java" />
         <option value="$PROJECT_DIR$/src/Vista/Menu.fxml" />
         <option value="$PROJECT_DIR$/src/Controlador/MenuControlador.java" />
-        <option value="$PROJECT_DIR$/src/Controlador/PapeletaControlador.java" />
         <option value="$PROJECT_DIR$/src/Controlador/PrincipalControlador.java" />
         <option value="$PROJECT_DIR$/src/Modelo/CentroVotacion.java" />
+        <option value="$PROJECT_DIR$/src/Controlador/Conexion.java" />
+        <option value="$PROJECT_DIR$/src/Controlador/Main.java" />
+        <option value="$PROJECT_DIR$/src/Controlador/PapeletaControlador.java" />
+        <option value="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
       </list>
     </option>
   </component>
@@ -294,24 +243,6 @@
             </path>
             <path>
               <item name="Tarea2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tarea2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Controlador" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tarea2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tarea2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Modelo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tarea2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tarea2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Vista" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tarea2" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -333,11 +264,11 @@
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="dynamic.classpath" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
-    <property name="last_opened_file_path" value="C:/sqljdbc4-2.0.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/sqljdbc4-2.0.jar!/" />
     <property name="aspect.path.notification.shown" value="true" />
   </component>
   <component name="RecentsManager">
@@ -473,6 +404,20 @@
       <Host>localhost</Host>
       <Port>5050</Port>
     </configuration>
+    <configuration name="sqljdbc4-2.0.jar" type="JarApplication" factoryName="JAR Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="JAR_PATH" value="$PROJECT_DIR$/sqljdbc4-2.0.jar" />
+      <envs />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+      <item index="1" class="java.lang.String" itemvalue="JAR Application.sqljdbc4-2.0.jar" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JAR Application.sqljdbc4-2.0.jar" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -504,11 +449,18 @@
       <option name="project" value="LOCAL" />
       <updated>1520298349806</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Versión final de la tarea">
+      <created>1520298364798</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1520298364798</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22508000" />
+    <option name="totallyTimeSpent" value="27163000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -521,13 +473,13 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289183" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29249448" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29249448" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20364584" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20364584" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -585,14 +537,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Controlador/Conexion.java</url>
-          <line>28</line>
-          <properties />
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="33" />
     </breakpoint-manager>
     <watches-manager />
@@ -602,39 +546,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Modelo/Papeleta.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-          <folding>
-            <element signature="e#397#398#0" expanded="true" />
-            <marker date="1520220428530" expanded="false" signature="396:407" ph=" { " />
-            <marker date="1520220428530" expanded="false" signature="431:437" ph=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Modelo/Candidato.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="31" column="3" lean-forward="false" selection-start-line="31" selection-start-column="3" selection-end-line="31" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controlador/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1520271739117" expanded="true" signature="945:991" ph="Select * fro... Votante" />
-            <marker date="1520271739117" expanded="false" signature="1472:1483" ph=" { " />
-            <marker date="1520271739117" expanded="false" signature="1496:1502" ph=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Vista/Principal.fxml">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -662,12 +573,12 @@
         <state relative-caret-position="273">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
-            <element signature="e#173#174#0" expanded="true" />
-            <element signature="e#198#199#0" expanded="true" />
-            <element signature="e#231#232#0" expanded="true" />
-            <element signature="e#259#260#0" expanded="true" />
-            <element signature="e#351#352#0" expanded="true" />
-            <element signature="e#401#402#0" expanded="true" />
+            <element signature="e#173#174#0" expanded="false" />
+            <element signature="e#198#199#0" expanded="false" />
+            <element signature="e#231#232#0" expanded="false" />
+            <element signature="e#259#260#0" expanded="false" />
+            <element signature="e#351#352#0" expanded="false" />
+            <element signature="e#401#402#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -714,9 +625,9 @@
           <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1520271739117" expanded="true" signature="945:991" ph="Select * fro... Votante" />
-            <marker date="1520271739117" expanded="false" signature="1472:1483" ph=" { " />
-            <marker date="1520271739117" expanded="false" signature="1496:1502" ph=" }" />
+            <marker date="1520313566566" expanded="true" signature="771:817" ph="Select * fro... Votante" />
+            <marker date="1520313566566" expanded="false" signature="1298:1309" ph=" { " />
+            <marker date="1520313566566" expanded="false" signature="1322:1328" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -745,12 +656,12 @@
         <state relative-caret-position="324">
           <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
           <folding>
-            <element signature="e#173#174#0" expanded="true" />
-            <element signature="e#198#199#0" expanded="true" />
-            <element signature="e#231#232#0" expanded="true" />
-            <element signature="e#259#260#0" expanded="true" />
-            <element signature="e#351#352#0" expanded="true" />
-            <element signature="e#401#402#0" expanded="true" />
+            <element signature="e#173#174#0" expanded="false" />
+            <element signature="e#198#199#0" expanded="false" />
+            <element signature="e#231#232#0" expanded="false" />
+            <element signature="e#259#260#0" expanded="false" />
+            <element signature="e#351#352#0" expanded="false" />
+            <element signature="e#401#402#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -792,9 +703,9 @@
           <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1520271739117" expanded="true" signature="945:991" ph="Select * fro... Votante" />
-            <marker date="1520271739117" expanded="false" signature="1472:1483" ph=" { " />
-            <marker date="1520271739117" expanded="false" signature="1496:1502" ph=" }" />
+            <marker date="1520313566566" expanded="true" signature="771:817" ph="Select * fro... Votante" />
+            <marker date="1520313566566" expanded="false" signature="1298:1309" ph=" { " />
+            <marker date="1520313566566" expanded="false" signature="1322:1328" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -843,12 +754,12 @@
         <state relative-caret-position="63">
           <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
           <folding>
-            <element signature="e#173#174#0" expanded="true" />
-            <element signature="e#198#199#0" expanded="true" />
-            <element signature="e#231#232#0" expanded="true" />
-            <element signature="e#259#260#0" expanded="true" />
-            <element signature="e#351#352#0" expanded="true" />
-            <element signature="e#401#402#0" expanded="true" />
+            <element signature="e#173#174#0" expanded="false" />
+            <element signature="e#198#199#0" expanded="false" />
+            <element signature="e#231#232#0" expanded="false" />
+            <element signature="e#259#260#0" expanded="false" />
+            <element signature="e#351#352#0" expanded="false" />
+            <element signature="e#401#402#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -868,9 +779,9 @@
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1520271739117" expanded="true" signature="945:991" ph="Select * fro... Votante" />
-            <marker date="1520271739117" expanded="false" signature="1472:1483" ph=" { " />
-            <marker date="1520271739117" expanded="false" signature="1496:1502" ph=" }" />
+            <marker date="1520313566566" expanded="true" signature="771:817" ph="Select * fro... Votante" />
+            <marker date="1520313566566" expanded="false" signature="1298:1309" ph=" { " />
+            <marker date="1520313566566" expanded="false" signature="1322:1328" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -903,9 +814,9 @@
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1520271739117" expanded="true" signature="945:991" ph="Select * fro... Votante" />
-            <marker date="1520271739117" expanded="false" signature="1472:1483" ph=" { " />
-            <marker date="1520271739117" expanded="false" signature="1496:1502" ph=" }" />
+            <marker date="1520313566566" expanded="true" signature="771:817" ph="Select * fro... Votante" />
+            <marker date="1520313566566" expanded="false" signature="1298:1309" ph=" { " />
+            <marker date="1520313566566" expanded="false" signature="1322:1328" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -969,16 +880,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controlador/Conexion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="31" column="5" lean-forward="false" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Vista/Papeleta.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
@@ -990,23 +891,89 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Modelo/Candidato.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="27" lean-forward="false" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Vista/Menu.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="17" column="14" lean-forward="false" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="uml://JavaScript-modules-diagram/C:/Users/Toño_PC/IdeaProjects/Tarea2">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$</OriginalElement>
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="764.5" y="49.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controlador/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-16">
-          <caret line="25" column="12" lean-forward="true" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+        <state relative-caret-position="651">
+          <caret line="31" column="41" lean-forward="false" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1520271739117" expanded="true" signature="945:991" ph="Select * fro... Votante" />
-            <marker date="1520271739117" expanded="false" signature="1472:1483" ph=" { " />
-            <marker date="1520271739117" expanded="false" signature="1496:1502" ph=" }" />
+            <marker date="1520313566566" expanded="true" signature="771:817" ph="Select * fro... Votante" />
+            <marker date="1520313566566" expanded="false" signature="1298:1309" ph=" { " />
+            <marker date="1520313566566" expanded="false" signature="1322:1328" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controlador/Conexion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Modelo/CentroVotacion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1055">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Modelo/Papeleta.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+          <folding>
+            <element signature="e#397#398#0" expanded="true" />
+            <marker date="1520220428530" expanded="false" signature="396:407" ph=" { " />
+            <marker date="1520220428530" expanded="false" signature="431:437" ph=" }" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controlador/PrincipalControlador.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="42">
+          <caret line="8" column="35" lean-forward="true" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
           <folding>
             <element signature="e#865#866#0" expanded="true" />
             <element signature="e#894#895#0" expanded="true" />
@@ -1023,71 +990,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controlador/PapeletaControlador.java">
+    <entry file="file://$PROJECT_DIR$/Tarea2.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1520296827707" expanded="true" signature="771:815" ph="Select * fro... Votante" />
-            <marker date="1520296827707" expanded="true" signature="771:816" ph="Select * fro... Votante" />
-            <marker date="1520296827707" expanded="true" signature="1129:1184" ph="SELECT ID_UR... URNA_VOTANTE" />
-            <marker date="1520296827707" expanded="true" signature="1548:1577" ph="INSERT INTO PAPELETA... " />
-            <marker date="1520296827707" expanded="true" signature="1548:1593" ph="INSERT INTO PAPELETA... " />
-            <marker date="1520296827707" expanded="true" signature="1548:1594" ph="INSERT INTO PAPELETA... " />
-            <marker date="1520296827707" expanded="true" signature="1548:1613" ph="INSERT INTO PAPELETA... " />
-            <marker date="1520296827707" expanded="true" signature="1782:1816" ph="UPDATE VOTAT... " />
-            <marker date="1520296827707" expanded="true" signature="1782:1839" ph="UPDATE VOTAT... " />
-            <marker date="1520296827707" expanded="true" signature="1782:1840" ph="UPDATE VOTAT... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Modelo/Candidato.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="27" lean-forward="true" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Vista/Menu.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="17" column="14" lean-forward="false" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controlador/MenuControlador.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
-          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Modelo/Papeleta.java">
+    <entry file="file://$PROJECT_DIR$/src/Controlador/PapeletaControlador.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="378">
+          <caret line="18" column="9" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
           <folding>
-            <element signature="e#397#398#0" expanded="true" />
-            <marker date="1520220428530" expanded="false" signature="396:407" ph=" { " />
-            <marker date="1520220428530" expanded="false" signature="431:437" ph=" }" />
+            <element signature="imports" expanded="true" />
+            <marker date="1520313566493" expanded="true" signature="785:829" ph="Select * fro... Votante" />
+            <marker date="1520313566493" expanded="true" signature="785:830" ph="Select * fro... Votante" />
+            <marker date="1520313566493" expanded="true" signature="1143:1198" ph="SELECT ID_UR... URNA_VOTANTE" />
+            <marker date="1520313566493" expanded="true" signature="1562:1591" ph="INSERT INTO PAPELETA... " />
+            <marker date="1520313566493" expanded="true" signature="1562:1607" ph="INSERT INTO PAPELETA... " />
+            <marker date="1520313566493" expanded="true" signature="1562:1608" ph="INSERT INTO PAPELETA... " />
+            <marker date="1520313566493" expanded="true" signature="1562:1627" ph="INSERT INTO PAPELETA... " />
+            <marker date="1520313566493" expanded="true" signature="1796:1830" ph="UPDATE VOTAT... " />
+            <marker date="1520313566493" expanded="true" signature="1796:1853" ph="UPDATE VOTAT... " />
+            <marker date="1520313566493" expanded="true" signature="1796:1854" ph="UPDATE VOTAT... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Modelo/CentroVotacion.java">
+    <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="63">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1098,11 +1042,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>JavaFXApp</last-edited>
+          <last-edited>Tarea2:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -1150,7 +1095,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

@@ -10,12 +10,11 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Downloads/sqljdbc4-2.0.jar/sqljdbc4-2.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/sqljdbc4-2.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="sqljdbc4-2.0" level="project" />
   </component>
 </module>

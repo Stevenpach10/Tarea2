@@ -1,11 +1,15 @@
 package Controlador;
 
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.event.ActionEvent;
-import java.sql.*;
 
-public class PapeletaControlador {
+import java.net.URL;
+import java.sql.*;
+import java.util.ResourceBundle;
+
+public class PapeletaControlador implements Initializable {
     @FXML
     public TextField txtId;
     @FXML
@@ -14,16 +18,16 @@ public class PapeletaControlador {
     public RadioButton rdb2;
     @FXML
     public RadioButton rdb3;
-
+    @FXML
+    final ToggleGroup group = new ToggleGroup();
 
 
 
     public void votar(ActionEvent event) {
         String cedula = txtId.getText();
-        final ToggleGroup group = new ToggleGroup();
-        rdb1.setToggleGroup(group);
-        rdb2.setToggleGroup(group);
-        rdb3.setToggleGroup(group);
+
+
+
 
 
         try {
@@ -77,7 +81,6 @@ public class PapeletaControlador {
             };
 
         } catch (SQLException e) {
-            e.printStackTrace();
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error");
             alert.setHeaderText("No es un usuario válido");
@@ -97,9 +100,10 @@ public class PapeletaControlador {
         }catch (Exception e){
 
         }
-
         return candidato;
     }
+
+
     private void limpiar(){
         txtId.setText("");
         rdb1.setSelected(false);
@@ -108,4 +112,10 @@ public class PapeletaControlador {
     }
 
 
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+        rdb1.setToggleGroup(group);
+        rdb2.setToggleGroup(group);
+        rdb3.setToggleGroup(group);
+    }
 }
